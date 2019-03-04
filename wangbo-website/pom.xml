@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>wangbo</artifactId>
+        <groupId>com.wangbo</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>wangbo-website</artifactId>
+
+    <dependencies>
+        <!-- 通用工具-->
+        <dependency>
+            <groupId>com.wangbo</groupId>
+            <artifactId>wangbo-common</artifactId>
+            <version>${wangbo.version}</version>
+        </dependency>
+        <!--website依赖system模块的某个包，则需要添加system的pom依赖-->
+        <dependency>
+            <groupId>com.wangbo</groupId>
+            <artifactId>wangbo-system</artifactId>
+            <version>${wangbo.version}</version>
+        </dependency>
+    </dependencies>
+
+
+</project>
